@@ -1,0 +1,53 @@
+	这是程序的一部分，现在没什么用了
+	
+	//声明一个一个椭圆对象，并画椭圆
+	//Ellipse e,zhu;
+
+	/*
+	//对椭圆进行平移
+	Matrix3x1 M,m0;
+	Matrix3x3 tm3x3;	//平移矩阵
+	m0.setAllElem1(100,100,1);	//设置椭圆中心，只要移动椭圆中心，重新在绘制就可以了c
+	//设置并初始化平移矩阵
+	float tm[3][3]={{1,0,100},{0,1,0},{0,0,1}};
+	tm3x3.setAllElem(tm);
+
+	//平移之后的坐标保存在矩阵M中
+	M = tm3x3 * m0;
+	//重绘椭圆
+	zhu.setEllipse(M.getElem(0),M.getElem(1),50,30);
+	zhu.ellipseMid();
+
+	*/
+
+
+	/*
+
+	//旋转的时候先构造旋转矩阵//tm2*rot*tm1
+	float R[3][3]={{0.866,-0.5,0},{0.5,0.866,0},{0,0,1}};//旋转30度
+	//设置两个平移矩阵，一个移动到原点，一个移回到原地
+	float tm1[3][3]={{1,0,-200},{0,1,-100},{0,0,1}};
+	float tm2[3][3]={{1,0,200},{0,1,100},{0,0,1}};
+	Matrix3x3 TM1,TM2;
+	TM1.setAllElem(tm1);
+	TM2.setAllElem(tm2);
+
+	Matrix3x3 rot;
+	rot.setAllElem(R);
+	Matrix3x1 ellpoint;
+	for(int i=0;i<Ellquesize;i++){
+		Point temp;
+		temp = Ellque.front();
+		Ellque.pop();
+		ellpoint.setAllElem2(temp);
+		Ellque.push( (TM2 * (rot * (TM1 * ellpoint))).getPoint());//将所有的点全部旋转并再次压入原始队列（应该先平移到原点的）
+	}
+
+	*/
+
+	/*for(int i=0;i<Ellquesize;i++){
+		Point temp;
+		temp = Ellque.front();
+		Ellque.pop();
+		setPixel(temp.X,temp.Y);
+	}*/
